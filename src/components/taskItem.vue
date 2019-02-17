@@ -3,7 +3,7 @@
         
         <div class="d-flex justify-content-center card-body" v-if="editingItem !== item">
             <input type="checkbox" v-model="item.finished">
-        <div>{{ item.id }} . {{ item.title }}</div>
+        <div>{{ item.id | moment("dddd, MMMM Do YYYY") }} . {{ item.title }}</div>
 
             <button @click="editTask()" class="btn-warning ml-2">Edit</button>
             <button @click="deleteTask()" class="btn-danger ml-1" >Delete</button>

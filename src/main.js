@@ -12,3 +12,5 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+// moment.js
+Vue.use(require('vue-moment'))

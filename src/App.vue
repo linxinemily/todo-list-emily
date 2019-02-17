@@ -52,20 +52,7 @@ export default {
   name: 'App',
   data() {
     return {
-      items: [
-        {
-          id:"1",
-          title:'A Task',
-          finished:false,
-          important:false
-        },
-        {
-          id:"2",
-          title:'B Task',
-          finished:false,
-          important:false
-        }
-      ],
+      items: [],
       newTaskTitle:'',
       editingItem:{},
       filterName:'all',
@@ -100,6 +87,8 @@ export default {
         let newItem = {
           id : Date.now(),
           title : form.title,
+          important: false,
+          finished: false
         }
         this.items.unshift(newItem)
         form.title = ''

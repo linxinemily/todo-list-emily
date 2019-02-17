@@ -16,7 +16,9 @@ export default {
     data(){
         return{
             form: {
-                title:''
+                title:'',
+                important: false,
+                finished: false
             }
         }
     },
